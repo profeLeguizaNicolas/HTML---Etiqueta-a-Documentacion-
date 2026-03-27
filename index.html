@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icono.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1><code class="gris">&lt;a></code> Elemento Ancla.</h1>
+        <p>
+            El elemento <code class="gris">&lt;a></code> Ancla se utiliza para crear enlaces a otros documentos <b>WEB</b>, archivos, secciones dentro del mismo documento, direcciones de correo electrónicos.
+        </p>
+        <b>Sintaxis:</b>
+<pre><code class="cpp">&lt;<span class="azul">a</span> <span class="celeste">href</span>=<span class="naranja">" "</span>>Clic aquí&lt;/<span class="azul">a</span>> 
+</code>
+</pre>
+    <h1>El atributo <code class="gris">href</code> en los enlaces.</h1>
+    <p>
+        <code class="gris">href</code> es la abreviatura de <i>hypertext Reference</i> (Refencia de Hipertexto). Este atributo define <b>URL</b> a la que apunta el enlace es decir, la dirección a la que se dirigirá el navegador cuando se haga clic en él.
+    </p>
+    <i>Ejemplos de uso:</i> <br>
+    <p>
+        En cuanto al uso de la etiqueta <code class="gris">&lt;a></code>, existen diversas aplicaciones prácticas. A continuación, se presentan algunos ejemplos:
+    </p>
+    <h1>Uso de etiqueta <code class="gris">&lt;a></code> con archivos locales:</h1>
+    <p>
+        Con esta etiqueta, podemos crear enlaces o vínculos hacia diferentes archivos. Por ejemplo, desde nuestro documento podemos hacer que el usuario abra una imagen al hacer clic en el enlace.
+    </p>
+    <hr>
+    <div class="center">
+        <img src="Imagenes/imagen1.png" alt="">
+    </div>
+    <p>
+        Esta es nuestra imagen, a la que hemos nombrado <code class="gris">imagen</code>. Se encuentra en el escritorio. La idea es que, mediante la codificación <code class="gris">HTML</code> en nuestra página, podamos permitir que el usuario acceda a la imagen al hacer clic en el enlace.
+    </p>
+    <p>
+        Crearemos un texto con un enlace que nos llevará a la imagen. El texto dirá <i>Haz clic aquí para ver una imagen</i>. A continuación, veremos algunos ejemplos visuales en código <code class="gris">HTML</code>:
+    </p>
+<pre><code class="cpp">1     &lt;!<span class="verde">DOCTYPE</span> <span class="celeste">html</span>>
+2           &lt;<span class="verde">html</span>>                
+3                &lt;<span class="verde">head</span>>
+4                    &lt;<span class="verde">title</span>>Enlaces&lt;/<span class="verde">title</span>>
+5                &lt;/<span class="verde">head</span>>
+6                &lt;<span class="verde">body</span>>
+7                        &lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"imagen.png"</span>>Haz clic aquí para ver una imagen.&lt;/<span class="verde">a</span>>
+8                &lt;/<span class="verde">body</span>>
+9            &lt;/<span class="verde">html</span>>
+</code>
+</pre>
+    <p>
+        Como podemos observar en la línea de código número <code class="gris">9</code>, utilizamos la etiqueta <code class="gris">&lt;a></code> y dentro de ella empleaños el <b>atributo</b> <code class="gris">href=""</code>. Es importante destacar que dentro de las comillas debemos colocar el nombre del archivo junto con su extensión, por ejemplo, esta imagen tiene la extensión <code class="gris">.png</code>.
+    </p>
+    <b>Sintaxis usada:</b>
+<pre><code class="cpp">&lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"imagen.png"</span>>Clic aquí para ver una imagen.&lt;/<span class="verde">a</span>>
+</code>
+</pre>
+        <p>
+            Una vez ingresado el enlace, debemos escribir el texto. En este caso, el texto será <code><i>Haz clic aquí para ver una imagen</i></code>. A continuación, veremos los resultados en el documento
+        </p>
+        <div class="center">
+            <img src="Imagenes/imagen2.png" alt="">
+        </div>
+        <div class="center">
+            <br>
+            <b>Haremos clic para ver qué sucede.</b>
+            <br>
+        </div>
+        <div class="center">
+            <img src="Imagenes/imagen3.png" alt="">
+        </div>
+        <h1>Nueva pestaña: <code class="gris"><span class="celeste">target</span>=<span class="naranja">"_blank"</span></code></h1>
+        <p>
+            Como podemos ver, al hacer clic en el texto de nuestra página principal, nos dirige directamente al archivo. Ahora, vamos agregar un <span class="celeste">atributo</span> más a nuestra <span class="verde">etiqueta</span> <code class="gris">&lt;a></code>, de modo que, al hacer clic en el texto, la imagen se abra en una nueva pestaña. A continuación, veremos el siguiente ejemplo: 
+        </p>
+<pre><code class="cpp">1     &lt;!<span class="verde">DOCTYPE</span> <span class="celeste">html</span>>
+2           &lt;<span class="verde">html</span>>                
+3                &lt;<span class="verde">head</span>>
+4                    &lt;<span class="verde">title</span>>Enlaces&lt;/<span class="verde">title</span>>
+5                &lt;/<span class="verde">head</span>>
+6                &lt;<span class="verde">body</span>>
+7                        &lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"imagen.png"</span> <span class="celeste">target</span>=<span class="naranja">"_blank"</span>>Haz clic aquí para ver una imagen.&lt;/<span class="verde">a</span>>
+8                &lt;/<span class="verde">body</span>>
+9            &lt;/<span class="verde">html</span>>
+</code>
+</pre>
+        <p>
+            El atributo agregado es el <code><span class="celeste">target</span></code>, y dentro de este atributo utilizamos <code><span class="naranja">_blank</span></code>.
+        </p>
+        <b>Sintaxis usada:</b> <br>
+<pre><code class="cpp">&lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"imagen.png"</span> <span class="celeste">target</span>=<span class="naranja">"_blank"</span>>Clic aquí para ver una imagen&lt;/<span class="verde">a</span>>
+</code>
+</pre>
+        <h1>Hipervinculo enrutado.</h1>
+        <p>
+            Supongamos que nuestra imagen se encuentra dentro de una carpeta. <b>¿Cómo haríamos para acceder a ella?</b> Pues, la sintaxis de nuestra etiqueta <code class="gris">&lt;a></code> cambiaría de la siguiente manera:
+        </p>
+<pre><code class="cpp">&lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"carpeta/imagen.png"</span>>Clic aquí para ver una imagen.&lt;/<span class="verde">a</span>>
+</code>
+</pre>
+        <p>
+            Como habrán notado, solo fue necesario indicar el nombre de la carpeta seguido de una barra diagonal <code class="gris">/</code> y, a continuación, el nombre de la imagen.
+        </p>
+        <h1>Enlaces externos.</h1>
+        <p>
+            El siguiente ejemplo mostrará cómo vincular nuestra etiqueta <code class="gris">&lt;a></code> a una <b>URL</b> externa. Como demostración, configuraremos el enlace para redirigirnos a <code><i>Google</i></code> desde nuestra página. A continuación, veamos el código:
+        </p>
+<pre><code class="cpp">1     &lt;!<span class="verde">DOCTYPE</span> <span class="celeste">html</span>>
+2           &lt;<span class="verde">html</span>>                
+3                &lt;<span class="verde">head</span>>
+4                    &lt;<span class="verde">title</span>>Enlaces&lt;/<span class="verde">title</span>>
+5                &lt;/<span class="verde">head</span>>
+6                &lt;<span class="verde">body</span>>
+7                        &lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"https://www.google.com"</span>>Clic aquí para ir a Google.&lt;/<span class="verde">a</span>>
+8                &lt;/<span class="verde">body</span>>
+9            &lt;/<span class="verde">html</span>>
+</code>
+</pre>
+        <p>
+            Como podemos observar, en el <span class="celeste">atributo</span> <code class="gris">href</code>
+             hemos colocado la <b>URL</b> de <code><i>Google</i></code> junto con el protocolo <code class="gris">https</code>. Recuerden que, si se trata de un enlace externo, es imprescindible incluir el protocolo de transmisión; de lo contrario, el enlace no funcionará.
+        </p>
+        <b>Sintaxis usada:</b><br>
+<pre><code class="cpp">&lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"https://www.google.com"</span>>Clic aquí para ir a Google.&lt;/<span class="verde">a</span>>
+</code>
+</pre>
+        <p>
+            Veamos también qué cambió en nuestra página:
+        </p>
+        <div class="center">
+            <img src="Imagenes/imagen4.png" alt="">
+        </div>
+        <br>
+        <p>
+            <b>Bien, ahora veamos qué sucede al hacer clic en el texto con el hipervínculo:</b>
+        </p>
+        <div class="center">
+            <img src="Imagenes/imagen5.png" alt="">
+        </div>
+        <p>
+            Como podemos observar, nuestra página nos redirige a <code><i>Google</i></code>.
+        </p>
+        <p>
+            Este ejemplo utilizó <i>google.com</i>, pero el mismo procedimiento se puede aplicar a cualquier otra <b>URL</b> que conozcamos.
+        </p>
+        <h1>Email y Telefonos.</h1>
+        <p>
+            Con la <span class="verd">etiqueta</span><code class="gris">&lt;a></code>, también podemos hacer que, al hacer clic, se abra una ventana para enviar un correo electrónico a una dirección específica. A continuación, se muestra un ejemplo de cómo hacerlo:
+        </p>
+<pre><code class="cpp">1     &lt;!<span class="verde">DOCTYPE</span> <span class="celeste">html</span>>
+2           &lt;<span class="verde">html</span>>                
+3                &lt;<span class="verde">head</span>>
+4                    &lt;<span class="verde">title</span>>Enlaces&lt;/<span class="verde">title</span>>
+5                &lt;/<span class="verde">head</span>>
+6                &lt;<span class="verde">body</span>>
+7                        &lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"mailto:batman.murcielago@gmail.com"</span>>Gmail de Batman.&lt;/<span class="verde">a</span>>
+8                &lt;/<span class="verde">body</span>>
+9            &lt;/<span class="verde">html</span>>
+</code>
+</pre>
+        <div class="center">
+            <b>Sintaxis usada:</b>
+        </div>
+<pre><code class="cpp">&lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"mailto:batman.murcielago@gmail.com"</span>>batman.murcielago@gmail.com&lt;/<span class="verde">a</span>>
+</code>
+</pre>
+        <p>
+            Un aspecto a destacar es que no es necesario mostrar la dirección de correo electrónico en el texto del enlace. En su lugar, podemos utilizar un mensaje como <i>Email para contactar a Batman</i>, y el enlace seguirá funcionando correctamente.
+        </p>
+        <b>Veamos un ejmplo:</b>
+        <br>
+<pre><code class="cpp">&lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"mailto:batman.murcielago@gmail.com"</span>>Email para contactar a Batman&lt;/<span class="verde">a</span>>
+</code>
+</pre>
+        <p>
+            Veamos cóomo se visualiza en nuestro documento y comprobemos su funcionamiento.
+        </p>
+        <div class="center">
+            <img src="Imagenes/imagen6.png" alt="">
+        </div>
+        <p>
+            ahora veamos cómo funciona en teléfonos celulares.
+        </p>
+        <p>
+            En el <span class="celeste">atributo</span> <code class="gris">href</code>, esta vez debemos utilizar la palabra clave <code class="gris">tel:</code>, seguida del número de teléfono al que queremos llamar o enviar un mensaje. Esta función es más efecctiva en dispositivos móviles que en computadoras.
+        </p>
+        <p>
+            En una <b>PC</b>, al hacer clic, se ejecutará una aplicacion de <span class="azul">Microsoft</span>, mientras que en un celular, el enlace se abrira en la aplicación de llamadas o en <span class="verde">WhatsApp</span>, según la configuración del dispositivo.
+        </p>
+        <p>
+            Veamos cómo quedó la codificación:
+        </p>
+<pre><code class="cpp">1     &lt;!<span class="verde">DOCTYPE</span> <span class="celeste">html</span>>
+2           &lt;<span class="verde">html</span>>                
+3                &lt;<span class="verde">head</span>>
+4                    &lt;<span class="verde">title</span>>Enlaces&lt;/<span class="verde">title</span>>
+5                &lt;/<span class="verde">head</span>>
+6                &lt;<span class="verde">body</span>>
+7                        &lt;<span class="verde">a</span> <span class="celeste">href</span>=<span class="naranja">"tel:+5491130301010"</span>>Telefono.&lt;/<span class="verde">a</span>>
+8                &lt;/<span class="verde">body</span>>
+9            &lt;/<span class="verde">html</span>>
+</code>
+</pre>
+        <p>
+            Veamos cómo nos quedó en nuestro documento:
+        </p>
+        <div class="center">
+            <img src="Imagenes/imagen7.png" alt="">
+        </div>
+    </body>
+</html>
